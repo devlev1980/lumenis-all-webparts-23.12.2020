@@ -1,0 +1,253 @@
+#workbenchPageContent{
+  max-width: 1800px;
+  font-family: 'Open Sans',sans-serif;
+}
+/*==================================  Useful links===========================================================*/
+
+
+
+.container {
+  font-family: 'Open Sans', sans-serif;
+  color: #09294a;
+  background: #fff;
+  max-width: 400px;
+  width: 100%;
+  border: 1px solid red;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #09294a;
+}
+
+#usefulLinksWPTitle {
+  text-align: center;
+}
+
+.CanvasComponent.LCS .row::before {
+  content: none !important;
+  display: none !important;
+}
+
+.useful_list {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(50px,1fr));
+  padding: 20px 0;
+}
+
+.item {
+  border-bottom: 1px solid rgba(212, 213, 218, 1);
+  border-right: 1px solid rgba(212, 213, 218, 1);
+  line-height: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 7px;
+  margin: 10px 0;
+}
+
+.item :nth-child(10),
+.item :nth-child(4),
+.item :nth-child(5),
+.item :nth-child(6),
+.item :nth-child(11),
+.item :nth-child(12) {
+  border-bottom: 0;
+
+}
+
+.item :nth-child(3),
+.item :nth-child(6),
+.item :nth-child(9),
+.item :nth-child(12) {
+  border-right: 0;
+}
+
+img {
+  display: block;
+}
+
+
+a {
+  text-decoration: none;
+  text-align: center;
+  color: #09294a;
+}
+
+/*================================================================================================================*/
+
+/*========================================= Quick links ===========================================================*/
+.LinksWrapper {
+
+}
+
+.LinksWrapper h1 {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  position: relative;
+}
+
+h1:before, h1:after {
+  content: "";
+  position: absolute;
+  top: 22px;
+  height: 1px;
+  width: 24%;
+  background: #09294a;
+}
+
+h1:before {
+  right: 10%;
+}
+
+h1:after {
+  left: 10%;
+}
+.LinksWrapper-Raw {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
+  margin-bottom: 6rem;
+}
+
+
+/*=============================================Photo gallery ==================================================*/
+#PhotoGalleryWebpartWrapper {
+  font-family: "Open Sans",sans-serif;
+  border: 1px solid cornflowerblue;
+}
+.LinksWrapper2 {
+  display: flex;
+  align-items: baseline;
+}
+.LinksWrapper-Raw2 {
+  flex: 1 1 20%;
+}
+.LinksWrapper-Raw2 h2{
+  margin-bottom: 0;
+}
+.LinksTab2 .LinkImage2 {
+
+  width: 100%;
+  margin-bottom: 10px;
+}
+.LinksTab2 .LinkImage2 button {
+  box-shadow: none;
+  border: 0;
+  background: rgba(229, 234, 242, 1);
+  font-weight: 400;
+  padding: 0.4rem;
+  font-size: 15px;
+  width: 100%;
+
+}
+.LinksTab2 .LinkImage2 img,button {
+  width: 100%;
+  border-radius: 10px;
+}
+#PhotoGalleryTable {
+  width: 72%;
+  background: #ffffff;
+  padding: 10px 5px;
+}
+#slidesShow-Container{
+  display: flex;
+  justify-content: space-evenly;
+}
+#slidesShow-Container .image-item {
+  max-width: 200px;
+  width: 100%;
+}
+.image-item  img{
+  width: 100%;
+}
+.divider {
+  width: 1px;
+  background-color: green;
+  margin: 0 0.75em;
+  display: block;
+  z-index: 100;
+  position: relative;
+}
+
+.divider:last-child{
+   opacity: 0;
+   display: none;
+ }
+h2 {
+  color: #040507;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+#PhotoGalleryTable #FileProperties {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+#PhotoGalleryTable #FileProperties div img{
+
+  margin-left: 5px;
+}
+#PhotoGalleryTable #after-slidesShow-Container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-right: 2.5rem;
+}
+h2{
+  font-family: "Open Sans",sans-serif;
+  font-weight: normal;
+  font-size: 23px;
+}
+#PhotoGalleryTable > div:nth-child(2) {
+  width: 100%;
+  padding: 16px 0;
+  border-radius: 10px;
+}
+/*=========================================== Greetings ===================================================*/
+#greetingsWP {
+  font-family: 'Open Sans', sans-serif;
+  direction: rtl;
+  color: #09294a;
+  /*background: #e3e3e3;*/
+  border: 1px solid orange;
+  height: 100%;
+}
+#greetingsWP h3{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #09294a;
+  background: #ffffff;
+}
+#greetingsWP .celebrant_detailes{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid #fff;
+  padding:5px 5px 5px 2px ;
+  font-weight:700;
+  background: #e3e3e3;
+}
+.evt_ic {
+  flex: 1 1 20%;
+  text-align: center;
+}
+
+.evt_ic a{
+  color: #09294a;
+  text-decoration: none;
+  font-weight:500;
+}
+#greetingsWP .info {
+  flex: 1 1 73%;
+}
+
+
+

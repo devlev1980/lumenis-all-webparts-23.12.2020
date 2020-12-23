@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "lumenis-all-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/lumenisAll/LumenisAllWebPart.js",
+          "manifest": "./src/webparts/lumenisAll/LumenisAllWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "LumenisAllWebPartStrings": "lib/webparts/lumenisAll/loc/{locale}.js"
+  }
+}
