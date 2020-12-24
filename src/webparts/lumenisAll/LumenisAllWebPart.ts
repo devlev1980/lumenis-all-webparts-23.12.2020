@@ -139,19 +139,28 @@ export default class LumenisAllWebPart extends BaseClientSideWebPart<ILumenisAll
     let html = ``;
     html += `
         <div class="all-webparts__container" style="display: grid;
-        grid-template-columns: 30% 1fr 30%;height: auto;max-width: 1600px; grid-gap: 30px ">
+        grid-template-columns: 18vw 43vw 18vw;height: auto;max-width: 1600px; grid-gap: 30px;">
         <div class="left__sidebar">
              <div class="container" id="usefulLinksWP">
                 <h3 id="usefulLinksWPTitle">${this.properties.wpTitle_UsefulLinks}</h3>
                  <div class="useful_list"></div>
+                 <div class="sahar__btn">
+             <button>
+             <a href="https://lumenis.sharepoint.com/sites/Portal">
+                         <img src="https://lumenis.sharepoint.com/sites/Portal/_layouts/15/getpreview.ashx?resolution=3&guidSite=ac473181b2a24fdfb025d47c413a3bd7&guidWeb=f304b7026b864ea0b55bdc28254a4c2b&guidFile=eba47dd82d884f7a82084cd016d381b5&clientType=modernWebPart" alt="">
+
+</a>
+</button>
+</div>
              </div>
+
          </div> `;
 
 
     // Quick Links
     if (this.properties.Link1 != '') {
       html += `
-<div class="main">
+<div class="main" style="height: 100%">
   <div class="LinksWrapper">
                 <h1 class="title">מידע לעובדים</h1>
              </div>
@@ -251,7 +260,7 @@ export default class LumenisAllWebPart extends BaseClientSideWebPart<ILumenisAll
             `;
     {
       html += `<div id="PhotoGalleryWebpartWrapper">
-                 <div id="LinksImages">
+                 <div id="LinksImages" style="direction: rtl">
 <div class="LinksWrapper2">
                      <div class="LinksWrapper-Raw2" ><h2  style="color: #040507";>${this.properties.linksImagesTitle}</h2><div class="raws-wrapper">`;
       if (this.properties.Link1PhotoGallery != '') {
@@ -324,6 +333,7 @@ export default class LumenisAllWebPart extends BaseClientSideWebPart<ILumenisAll
       </div>
       </div>
  </div>`;
+          // tslint:disable-next-line:no-unused-expression
         }`
 `;
       }
@@ -348,6 +358,7 @@ export default class LumenisAllWebPart extends BaseClientSideWebPart<ILumenisAll
 
       // let MarginLeft = NumberOfActiveLinks.toString() + '%';
     }
+    // tslint:disable-next-line:no-unused-expression
     `
   `;
 
@@ -991,20 +1002,7 @@ export default class LumenisAllWebPart extends BaseClientSideWebPart<ILumenisAll
                 })
               ]
             },
-            {
-              groupName: 'Quick Link 9',
-              groupFields: [
-                PropertyPaneTextField('Link9', {
-                  label: 'Enter link to page'
-                }),
-                PropertyPaneTextField('LinkImage9', {
-                  label: 'Enter link to image'
-                }),
-                PropertyPaneTextField('Link9Text', {
-                  label: 'Enter link description'
-                })
-              ]
-            },
+
             // Greetings
             {
               groupName: 'Greetings',

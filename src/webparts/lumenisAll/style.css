@@ -1,3 +1,8 @@
+
+#spPageCanvasContent .CanvasZone {
+  direction: ltr !important;
+}
+
 #workbenchPageContent{
   max-width: 1800px;
   font-family: 'Open Sans',sans-serif;
@@ -13,7 +18,25 @@
   max-width: 400px;
   width: 100%;
   border: 1px solid red;
+  height: 100%;
+  position: relative;
 }
+.container .sahar__btn {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.container .sahar__btn button{
+  height: 57px;
+  font-size: 22px;
+  background: transparent;
+  border: 0;
+}
+.container .sahar__btn button img{
+  width: 100%;
+  object-fit: cover;
+}
+
 
 h3 {
   font-size: 1.5rem;
@@ -34,12 +57,13 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3,minmax(50px,1fr));
   padding: 20px 0;
+  box-shadow: 0 0 3px rgba(0,0,0,0.5);
 }
 
 .item {
   border-bottom: 1px solid rgba(212, 213, 218, 1);
   border-right: 1px solid rgba(212, 213, 218, 1);
-  line-height: 2;
+  line-height: 27px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,8 +74,10 @@ h3 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 7px;
+  /*padding: 11px;*/
   margin: 10px 0;
+  justify-content: center;
+  padding: 3px;
 }
 
 .item :nth-child(10),
@@ -70,6 +96,11 @@ h3 {
 .item :nth-child(12) {
   border-right: 0;
 }
+.item :nth-child(10),
+.item :nth-child(11),
+.item :nth-child(12){
+  border-bottom: 0;
+}
 
 img {
   display: block;
@@ -87,6 +118,10 @@ a {
 /*========================================= Quick links ===========================================================*/
 .LinksWrapper {
 
+}
+.LinkText{
+  max-width: 86px;
+  text-align: center;
 }
 
 .LinksWrapper h1 {
@@ -114,8 +149,13 @@ h1:after {
 }
 .LinksWrapper-Raw {
   display: grid;
-  grid-template-columns: repeat(4, minmax(150px, 1fr));
-  margin-bottom: 6rem;
+  margin-bottom: 4.4rem;
+  grid-template-columns: repeat(4,minmax(50px,1fr));
+  padding-left: 41px;
+}
+.LinkImage a img {
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+  border-radius: 50%;
 }
 
 
@@ -134,6 +174,7 @@ h1:after {
 .LinksWrapper-Raw2 h2{
   margin-bottom: 0;
 }
+
 .LinksTab2 .LinkImage2 {
 
   width: 100%;
@@ -144,10 +185,18 @@ h1:after {
   border: 0;
   background: rgba(229, 234, 242, 1);
   font-weight: 400;
-  padding: 0.4rem;
+  padding: 0.7rem;
   font-size: 15px;
   width: 100%;
 
+}
+.LinksTab2:first-child .LinkImage2{
+  /*height: 50px;*/
+  margin-top: 1rem;
+
+}
+.LinksTab2{
+  /*margin-top: 1rem;*/
 }
 .LinksTab2 .LinkImage2 img,button {
   width: 100%;
@@ -158,6 +207,12 @@ h1:after {
   background: #ffffff;
   padding: 10px 5px;
 }
+#PhotoGalleryTable #Title {
+  padding-right: 4rem;
+  position: relative;
+  top: 2px;
+}
+
 #slidesShow-Container{
   display: flex;
   justify-content: space-evenly;
@@ -190,6 +245,7 @@ h2 {
 #PhotoGalleryTable #FileProperties {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 10px;
 }
 #PhotoGalleryTable #FileProperties div img{
 
@@ -199,6 +255,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3,1fr);
   margin-right: 2.5rem;
+  margin-top: 10px;
 }
 h2{
   font-family: "Open Sans",sans-serif;
@@ -236,9 +293,14 @@ h2{
   background: #e3e3e3;
 }
 .evt_ic {
-  flex: 1 1 20%;
-  text-align: center;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
+
+
 
 .evt_ic a{
   color: #09294a;
@@ -246,7 +308,32 @@ h2{
   font-weight:500;
 }
 #greetingsWP .info {
-  flex: 1 1 73%;
+  width: 70%;
+}
+.scrollEvents{
+  height: 68.5vh;
+  border: 1px solid cyan;
+  overflow-y: auto;
+}
+@media (max-width: 1200px) {
+  .LinkImage a img {
+    width: 50%;
+  }
+  .LinkText{
+    max-width: 47.5%;
+
+  }
+  .LinksWrapper-Raw {
+    /*margin-bottom:7.4rem;*/
+  }
+
+
+}
+a.footeritem img{
+  display: inherit !important;
+}
+.CanvasComponent:nth-child(4){
+  background: red;
 }
 
 
