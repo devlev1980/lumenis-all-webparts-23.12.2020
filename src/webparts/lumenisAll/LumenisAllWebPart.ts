@@ -138,12 +138,16 @@ export default class LumenisAllWebPart extends BaseClientSideWebPart<ILumenisAll
     } else NumberOfActiveLinks = 0;
     let html = ``;
     html += `
+ <header style="width: 100%">
+        <img src="https://lumenis.sharepoint.com/_api/v2.1/drives/b!gTFHrKKy30-wJdR8QTo71wK3BPOGa6BOtVvcKCVKTCtS1FB9GvW6TJT5gsqaxIr6/items/01K54NSDGIFZHKI25RDVCY2GZWSR2VHFIS/thumbnails/0/c1600x99999/content?preferNoRedirect=true&prefer=extendCacheMaxAge&clientType=modernWebPart" alt="">
+</header>
         <div class="all-webparts__container" style="display: grid;
-        grid-template-columns: 18vw 43vw 18vw;height: auto;max-width: 1600px; grid-gap: 30px;">
+        grid-template-columns: 21vw 43vw 21vw;height: auto;max-width: 1600px; grid-gap: 30px; width: calc(100% - 300px);margin: auto">
+
         <div class="left__sidebar">
              <div class="container" id="usefulLinksWP">
-                <h3 id="usefulLinksWPTitle">${this.properties.wpTitle_UsefulLinks}</h3>
-                 <div class="useful_list"></div>
+                <div style="background: #fff;border-radius: 10px;height: 84%"><h3 id="usefulLinksWPTitle">${this.properties.wpTitle_UsefulLinks}</h3>
+                 <div class="useful_list"></div></div>
                  <div class="sahar__btn">
              <button>
              <a href="https://lumenis.sharepoint.com/sites/Portal">
@@ -303,7 +307,7 @@ export default class LumenisAllWebPart extends BaseClientSideWebPart<ILumenisAll
                                    <div id="Title">
                                    <h2  style="color: #040507";>${this.properties.photoGalleryTitle}</h2>
                                     </div>
-                                     <div style="width:100%;">
+                                     <div style="width:100%; height: 231px;  background: #fff;  padding: 16px;  margin: 1.2rem auto;">
                                      <div id="FileProperties">
                                     </div>
                                     <div id="slidesShow-Container">
