@@ -139,10 +139,13 @@ export default class LumenisAllWebPart extends BaseClientSideWebPart<ILumenisAll
     let html = ``;
     html += `
  <header style="width: 100%">
-        <img src="https://lumenis.sharepoint.com/_api/v2.1/drives/b!gTFHrKKy30-wJdR8QTo71wK3BPOGa6BOtVvcKCVKTCtS1FB9GvW6TJT5gsqaxIr6/items/01K54NSDGIFZHKI25RDVCY2GZWSR2VHFIS/thumbnails/0/c1600x99999/content?preferNoRedirect=true&prefer=extendCacheMaxAge&clientType=modernWebPart" alt="">
+ <a href="https://lumenis.sharepoint.com/sites/Portal">
+         <img src="https://lumenis.sharepoint.com/_api/v2.1/drives/b!gTFHrKKy30-wJdR8QTo71wK3BPOGa6BOtVvcKCVKTCtS1FB9GvW6TJT5gsqaxIr6/items/01K54NSDGIFZHKI25RDVCY2GZWSR2VHFIS/thumbnails/0/c1600x99999/content?preferNoRedirect=true&prefer=extendCacheMaxAge&clientType=modernWebPart" alt="">
+
+</a>
 </header>
         <div class="all-webparts__container" style="display: grid;
-        grid-template-columns: 21vw 43vw 21vw;height: auto;max-width: 1600px; grid-gap: 30px; width: calc(100% - 300px);margin: auto">
+        grid-template-columns: 21vw 43vw 21vw;height: auto;max-width: 1600px; grid-gap: 30px; width: calc(100% - 200px);margin: auto">
 
         <div class="left__sidebar">
              <div class="container" id="usefulLinksWP">
