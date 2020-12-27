@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="267cf657-9492-4ced-aa95-c69decccaa15" name="Default Changelist" comment="fixing css-2">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="267cf657-9492-4ced-aa95-c69decccaa15" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/webparts/lumenisAll/LumenisAllWebPart.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/webparts/lumenisAll/LumenisAllWebPart.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/webparts/lumenisAll/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/webparts/lumenisAll/style.css" afterDir="false" />
@@ -70,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608729123241</updated>
-      <workItem from="1608729126698" duration="52593000" />
+      <workItem from="1608729126698" duration="60211000" />
     </task>
     <task id="LOCAL-00001" summary="add project">
       <created>1608739286369</created>
@@ -93,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608824360494</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fixing css-3">
+      <created>1609063114438</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609063114438</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +109,7 @@
     <MESSAGE value="add project" />
     <MESSAGE value="fixing css" />
     <MESSAGE value="fixing css-2" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing css-2" />
+    <MESSAGE value="fixing css-3" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing css-3" />
   </component>
 </project>

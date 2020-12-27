@@ -145,7 +145,7 @@ export default class LumenisAllWebPart extends BaseClientSideWebPart<ILumenisAll
 </a>
 </header>
         <div class="all-webparts__container" style="display: grid;
-        grid-template-columns: 21vw 43vw 21vw;height: auto;max-width: 1600px; grid-gap: 30px; width: calc(100% - 200px);margin: auto">
+        grid-template-columns: 21vw 43vw 21vw;height: auto; grid-gap: 30px;margin: 0 5vw">
 
         <div class="left__sidebar">
              <div class="container" id="usefulLinksWP">

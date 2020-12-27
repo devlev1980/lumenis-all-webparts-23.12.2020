@@ -139,8 +139,9 @@ a {
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
   position: relative;
-  font-size: 30px;
+  font-size: 33px;
   color: #fff;
+  margin-top: 12px;
 
 
 }
@@ -148,7 +149,7 @@ a {
 h1:before, h1:after {
   content: "";
   position: absolute;
-  top: 22px;
+  top: 25px;
   height: 1px;
   width: 24%;
   background: #fff;
@@ -275,7 +276,7 @@ h1:after {
 }
 
 .divider {
-  width: 1px;
+  width: 5px;
   margin: 0 0.75em;
   display: block;
   z-index: 100;
@@ -284,7 +285,7 @@ h1:after {
 }
 
 .divider:last-child {
-
+  opacity: 0;
 }
 
 h2 {
@@ -389,7 +390,7 @@ img.ImageInLink2 {
 }
 
 .scrollEvents {
-  height: 67.3vh;
+  height: 94%;
   overflow-y: auto;
 
 }
@@ -397,14 +398,17 @@ img.ImageInLink2 {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+@media (max-width: 1625px) {
+  #greetingsWP .celebrant_detailes {
+    font-size: 12px;
+  }
+}
 
 @media (max-width: 1250px) {
   .LinkImage a img {
     width: 50%;
   }
-  .LinksTab2 .LinkImage2 button {
-    font-size:13px;
-  }
+
 
 
   .LinkText {
@@ -428,7 +432,7 @@ img.ImageInLink2 {
     height: 223px;
   }
   .LinksTab2 .LinkImage2 button {
-    font-size:14px;
+    font-size:13px;
   }
 
 
