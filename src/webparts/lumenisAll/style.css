@@ -5,7 +5,10 @@
 
 #workbenchPageContent {
   max-width: 1800px;
-  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
+  /*font-family: "Segoe UI";*/
+ font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+
 }
 
 /*==================================  Useful links===========================================================*/
@@ -19,19 +22,21 @@ header img{
 }
 
 .container {
-  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+
   color: #09294a;
   max-width: 400px;
   width: 100%;
   position: relative;
   border-radius: 10px;
-  height: 94%;
+  height:61vh;
 }
 
 .container .sahar__btn {
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: -55px;
 }
 
 .container .sahar__btn button {
@@ -72,7 +77,7 @@ h3 {
 .item {
   border-bottom: 1px solid rgba(212, 213, 218, 1);
   border-right: 1px solid rgba(212, 213, 218, 1);
-  line-height: 27px;
+  /*line-height: 27px;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,12 +137,15 @@ a {
 .LinkText {
   max-width: 86px;
   text-align: center;
+  white-space: nowrap;
 }
 
 .LinksWrapper h1 {
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
   font-weight: normal;
+
   position: relative;
   font-size: 33px;
   color: #fff;
@@ -165,25 +173,41 @@ h1:after {
 
 .LinksWrapper-Raw {
   display: grid;
-  margin-bottom: 4.4rem;
+  /*margin-bottom: 4.4rem;*/
   grid-template-columns: repeat(4, minmax(50px, 1fr));
   padding-left: 41px;
+  grid-template-rows: repeat(2,138px);
 }
 
 .LinkImage a img {
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  /*box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);*/
   border-radius: 50%;
 }
+.LinksTab{
+  /*margin-bottom: 40px;*/
+}
+.LinksTab2:nth-child(1),
+.LinksTab2:nth-child(2),
+.LinksTab2:nth-child(3),
+.LinksTab2:nth-child(4)
+{
+  margin-bottom: 10px;
+}
+
 
 
 /*=============================================Photo gallery ==================================================*/
 #PhotoGalleryWebpartWrapper {
-  font-family: "Open Sans", sans-serif;
+  /*font-family: "Open Sans", sans-serif;*/
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+
 }
 
 .LinksWrapper2 {
   display: flex;
   align-items: baseline;
+  position: relative;
+  top: -9px;
 }
 
 .LinksWrapper-Raw2 {
@@ -193,7 +217,7 @@ h1:after {
 .LinksWrapper-Raw2 h2 {
   margin-bottom: 0;
   position: relative;
-  top: -4px;
+  top: 8px;
   right: 32px;
 }
 .LinksTab2{
@@ -201,7 +225,7 @@ h1:after {
 .LinksTab2 .LinkImage2 {
 
   width: 100%;
-  margin-bottom: 10px;
+  /*margin-bottom: 10px;*/
 }
 
 .LinksTab2 .LinkImage2 button {
@@ -228,8 +252,7 @@ h1:after {
 }
 
 
-.LinksTab2 {
-}
+
 
 .LinksTab2 .LinkImage2 img, button {
   width: 100%;
@@ -258,7 +281,7 @@ h1:after {
 #PhotoGalleryTable #Title {
   padding-right: 4rem;
   position: relative;
-  top: 2px;
+  top: 14px;
 }
 
 #slidesShow-Container {
@@ -308,12 +331,14 @@ h2 {
 #PhotoGalleryTable #after-slidesShow-Container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-right: 2.5rem;
+  /*margin-right: 2.5rem;*/
   margin-top: 10px;
 }
 
 h2 {
-  font-family: "Open Sans", sans-serif;
+  /*font-family: "Open Sans", sans-serif;*/
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+
   font-weight: normal;
   font-size: 23px;
 }
@@ -327,22 +352,26 @@ img.ImageInLink2 {
   height: 100%;
   object-fit: unset;
 }
+.WPevents{
+  height: 93%;
+}
+
 
 
 
 /*=========================================== Greetings ===================================================*/
 .sidebar{
-  height: 73.4vh;
+  /*height: 73.4vh;*/
   overflow-y: hidden;
 }
 #greetingsWP {
-  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
   direction: rtl;
   color: #09294a;
-  height: 94%;
   background: #fff;
   border-radius: 10px;
-
+  height: 65vh;
 }
 
 #greetingsWP h3 {
@@ -358,17 +387,18 @@ img.ImageInLink2 {
   display: flex;
   justify-content: space-between;
   border-bottom: 3px solid #fff;
-  padding: 5px 5px 5px 2px;
+  padding: 10px 5px 10px 2px;
   font-weight: 700;
   background: #e3e3e3;
 }
 
 .evt_ic {
-  width: 21%;
+  width: 22%;
   display: flex;
   align-items: center;
   position: relative;
-  margin-left: 1rem;
+  font-size: 12px;
+  /*margin-left: 1rem;*/
 
 
 }
@@ -390,7 +420,7 @@ img.ImageInLink2 {
 }
 
 .scrollEvents {
-  height: 94%;
+  height: 100%;
   overflow-y: auto;
 
 }
@@ -402,28 +432,36 @@ img.ImageInLink2 {
   #greetingsWP .celebrant_detailes {
     font-size: 12px;
   }
+  /*.container{*/
+  /*  height: 63vh;*/
+  /*}*/
+  /*.container .sahar__btn {*/
+  /*  width: 100%;*/
+  /*  position: absolute;*/
+  /*  bottom: -88px;*/
+  /*}*/
+  /*#greetingsWP{*/
+  /*  height: 74%;*/
+  /*}*/
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1625px) {
+  #greetingsWP .celebrant_detailes {
+    font-size: 12px;
+  }
   .LinkImage a img {
     width: 50%;
   }
-
-
-
   .LinkText {
     max-width: 47.5%;
-
   }
 
-  .LinksWrapper-Raw {
-    margin-bottom:6.4rem;
-  }
+
   #greetingsWP .celebrant_detailes {
     font-size: 12px;
   }
   .evt_ic {
-    font-size: 9px;
+    font-size: 12px;
   }
   .evt_ic img {
     top:-3px;
@@ -432,16 +470,20 @@ img.ImageInLink2 {
     height: 223px;
   }
   .LinksTab2 .LinkImage2 button {
-    font-size:13px;
+    font-size:12px;
   }
-
-
-
-
-
-
-
+  .LinksTab2:first-child, .LinksTab2:nth-child(2), .LinksTab2:nth-child(3), .LinksTab2:nth-child(4) {
+    margin-bottom: 15px;
+  }
 }
+@media (max-width: 1200px){
+  .LinksTab2 .LinkImage2 button {
+    font-size: 10px;
+  }
+}
+
+
+
 
 a.footeritem img {
   display: inherit !important;

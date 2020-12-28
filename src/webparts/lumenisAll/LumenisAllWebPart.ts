@@ -22,6 +22,8 @@ import * as $ from 'jquery';
 import * as moment from 'moment';
 
 export interface ILumenisAllWebPartProps {
+//  Header
+  mainBannerImg: string;
 // Usefull Links
   description_UsefulLinks: string;
   wpTitle_UsefulLinks: string;
@@ -140,7 +142,8 @@ export default class LumenisAllWebPart extends BaseClientSideWebPart<ILumenisAll
     html += `
  <header style="width: 100%">
  <a href="https://lumenis.sharepoint.com/sites/Portal">
-         <img src="https://lumenis.sharepoint.com/_api/v2.1/drives/b!gTFHrKKy30-wJdR8QTo71wK3BPOGa6BOtVvcKCVKTCtS1FB9GvW6TJT5gsqaxIr6/items/01K54NSDGIFZHKI25RDVCY2GZWSR2VHFIS/thumbnails/0/c1600x99999/content?preferNoRedirect=true&prefer=extendCacheMaxAge&clientType=modernWebPart" alt="">
+<!--         <img src="https://lumenis.sharepoint.com/_api/v2.1/drives/b!gTFHrKKy30-wJdR8QTo71wK3BPOGa6BOtVvcKCVKTCtS1FB9GvW6TJT5gsqaxIr6/items/01K54NSDGIFZHKI25RDVCY2GZWSR2VHFIS/thumbnails/0/c1600x99999/content?preferNoRedirect=true&prefer=extendCacheMaxAge&clientType=modernWebPart" alt="">-->
+         <img src="${escape(this.properties.mainBannerImg)}" alt="">
 
 </a>
 </header>
@@ -186,7 +189,7 @@ export default class LumenisAllWebPart extends BaseClientSideWebPart<ILumenisAll
           <div class="LinkImage">
             <a href="${escape(this.properties.Link2)}"><img class="ImageInLink" src="${escape(this.properties.LinkImage2)}"></a>
           </div>
-          <div class="LinkText">
+          <div class="LinkText" style="position: relative;left: -18px">
             <a href="${escape(this.properties.Link2)}">${escape(this.properties.Link2Text)}</a>
           </div>
         </div>`;
@@ -880,6 +883,14 @@ export default class LumenisAllWebPart extends BaseClientSideWebPart<ILumenisAll
             description: strings.PropertyPaneDescription
           },
           groups: [
+            {
+              groupName: 'Main Banner',
+              groupFields: [
+                PropertyPaneTextField('mainBannerImg', {
+                  label: 'Enter Link to image'
+                }),
+              ]
+            },
             {
               groupName: 'Useful Links',
               groupFields: [

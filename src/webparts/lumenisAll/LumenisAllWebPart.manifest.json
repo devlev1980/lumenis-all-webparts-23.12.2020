@@ -22,6 +22,7 @@
     "officeFabricIconFontName": "Page",
     "properties": {
       "description": "lumenis-all",
+      "mainBannerImg": "https://lumenis.sharepoint.com/sites/Portal/Site%20Assets/Homepage%20design/BigBanner1-.jpg",
       "descriptionUsefulLinks": "LumenisUsefulLinksWp",
       "wpTitle_UsefulLinks": "קישורים שימושיים",
       "listName_UsefulLinks": "LumenisUsefulLinks",
@@ -61,7 +62,7 @@
       "photosLibraryName": "Photo Gallery",
       "linksImagesTitle": "גיוס וניוד",
       "Link1PhotoGallery": "https://lumenis.sharepoint.com/sites/Portal",
-      "LinkImage1PhotoGallery": "https://lumenis.sharepoint.com/sites/Portal/Site%20Assets/Homepage%20design/welcome.png",
+      "LinkImage1PhotoGallery": "https://lumenis.sharepoint.com/sites/Portal/Site%20Assets/Homepage%20design/welcome_FIXED.png",
       "Link2PhotoGallery": "https://lumenis.sharepoint.com/sites/Portal",
       "Link2TextPhotoGallery": "המשרות שלנו",
       "Link3PhotoGallery": "https://lumenis.sharepoint.com/sites/Portal",
