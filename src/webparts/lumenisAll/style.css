@@ -1,4 +1,9 @@
-
+div[data-automationid="SiteHeader"]{
+  display: none !important;
+}
+div.ms-SPLegacyFabricBlock{
+  width: 100vw;
+}
 #spPageCanvasContent .CanvasZone {
   direction: ltr !important;
 }
@@ -13,33 +18,43 @@
 
 /*==================================  Useful links===========================================================*/
 header{
-  width: 100vw;
-  cursor: pointer;
+  /*width: 100vw;*/
+  /*cursor: pointer;*/
+
+  width: 100%;
+  /*height: 125px;*/
 }
 header img{
-  width: 100vw;
+  /*width: 100vw;*/
   height: 100%;
 }
+.main{
+  height: 78%;
+  border: 1px solid red;
+  position: relative;
+}
+.right__sidebar{
+  height:71.5%;
+}
 
-.container {
+.sidebar_container {
   /*font-family: 'Open Sans', sans-serif;*/
   font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
-
   color: #09294a;
   max-width: 400px;
   width: 100%;
   position: relative;
   border-radius: 10px;
-  height:61vh;
+  height: 73.4%;
 }
 
-.container .sahar__btn {
+.sidebar_container .sahar__btn {
   width: 100%;
   position: absolute;
-  bottom: -55px;
+  bottom: 3px;
 }
 
-.container .sahar__btn button {
+.sidebar_container .sahar__btn button {
   height: 57px;
   font-size: 22px;
   background: transparent;
@@ -47,7 +62,7 @@ header img{
   padding: 0;
 }
 
-.container .sahar__btn button img {
+.sidebar_container .sahar__btn button img {
   width: 100%;
   object-fit: cover;
 }
@@ -72,6 +87,8 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3, minmax(50px, 1fr));
   padding: 20px 0;
+  /*min-height: 52vh;*/
+  /*height: 55vh;*/
 }
 
 .item {
@@ -91,6 +108,9 @@ h3 {
   margin: 10px 0;
   justify-content: center;
   padding: 3px;
+}
+.item > div > img{
+  width: 2.1vw;
 }
 
 .item :nth-child(10),
@@ -125,6 +145,7 @@ a {
   text-decoration: none;
   text-align: center;
   color: #09294a;
+  font-size: 0.7vw;
 }
 
 /*================================================================================================================*/
@@ -182,6 +203,7 @@ h1:after {
 .LinkImage a img {
   /*box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);*/
   border-radius: 50%;
+  width: 5vw;
 }
 .LinksTab{
   /*margin-bottom: 40px;*/
@@ -191,7 +213,7 @@ h1:after {
 .LinksTab2:nth-child(3),
 .LinksTab2:nth-child(4)
 {
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 
 
@@ -206,12 +228,12 @@ h1:after {
 .LinksWrapper2 {
   display: flex;
   align-items: baseline;
-  position: relative;
-  top: -9px;
+  position: absolute;
+  bottom: 0;
 }
 
 .LinksWrapper-Raw2 {
-  flex: 1 1 20%;
+  flex: 1 1 44%;
 }
 
 .LinksWrapper-Raw2 h2 {
@@ -273,7 +295,7 @@ h1:after {
   background: #fff;
   padding: 16px;
   margin: 1.2rem auto;
-  height: 231px;
+  /*height: 231px;*/
 
 }
 
@@ -371,7 +393,11 @@ img.ImageInLink2 {
   color: #09294a;
   background: #fff;
   border-radius: 10px;
-  height: 65vh;
+  position: relative;
+  height: 100%;
+
+  /*height: 70.8vh;*/
+  /*height: 75.2vh;*/
 }
 
 #greetingsWP h3 {
@@ -381,6 +407,11 @@ img.ImageInLink2 {
   color: #09294a;
   background: #ffffff;
   border-radius: 10px;
+}
+.WPevents{
+  top: 68px;
+  left: 0;
+  right: 0;
 }
 
 #greetingsWP .celebrant_detailes {
@@ -393,19 +424,25 @@ img.ImageInLink2 {
 }
 
 .evt_ic {
-  width: 22%;
+  width: 23%;
   display: flex;
   align-items: center;
   position: relative;
-  font-size: 12px;
+  /*font-size: 12px;*/
+  font-size: 1vw;
   /*margin-left: 1rem;*/
 
 
+}
+.evt_ic:last-child img{
+  width: 1vw;
 }
 .evt_ic img{
   position: absolute;
   top: 1px;
   right: 15px;
+  width: 2vw;
+  height: auto;
 }
 
 
@@ -428,6 +465,19 @@ img.ImageInLink2 {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+
+@media (min-width: 1919px) {
+  /*.LinksWrapper2 {*/
+  /*  display: flex;*/
+  /*  align-items: baseline;*/
+  /*  position: relative;*/
+  /*  top: -16px;*/
+  /*}*/
+  /*.LinksTab2:first-child, .LinksTab2:nth-child(2), .LinksTab2:nth-child(3), .LinksTab2:nth-child(4) {*/
+  /*  margin-bottom: 4px;*/
+  /*}*/
+}
+
 @media (max-width: 1625px) {
   #greetingsWP .celebrant_detailes {
     font-size: 12px;
@@ -446,40 +496,71 @@ img.ImageInLink2 {
 }
 
 @media (max-width: 1625px) {
-  #greetingsWP .celebrant_detailes {
-    font-size: 12px;
-  }
-  .LinkImage a img {
-    width: 50%;
-  }
-  .LinkText {
-    max-width: 47.5%;
-  }
+/*  #greetingsWP .celebrant_detailes {*/
+/*    font-size: 12px;*/
+/*  }*/
+/*  .LinkImage a img {*/
+/*    width: 50%;*/
+/*  }*/
+/*  .LinkText {*/
+/*    max-width: 47.5%;*/
+/*    font-size: 12px;*/
+/*  }*/
 
 
-  #greetingsWP .celebrant_detailes {
-    font-size: 12px;
-  }
-  .evt_ic {
-    font-size: 12px;
-  }
-  .evt_ic img {
-    top:-3px;
-  }
-  #PhotoGalleryTable > div:nth-child(2) {
-    height: 223px;
-  }
-  .LinksTab2 .LinkImage2 button {
-    font-size:12px;
-  }
-  .LinksTab2:first-child, .LinksTab2:nth-child(2), .LinksTab2:nth-child(3), .LinksTab2:nth-child(4) {
-    margin-bottom: 15px;
-  }
+/*  #greetingsWP .celebrant_detailes {*/
+/*    font-size: 12px;*/
+/*  }*/
+/*  .evt_ic {*/
+/*    font-size: 12px;*/
+/*  }*/
+/*  .evt_ic img {*/
+/*    top:-3px;*/
+/*  }*/
+/*  #PhotoGalleryTable > div:nth-child(2) {*/
+/*    height: 223px;*/
+/*  }*/
+/*  .LinksTab2 .LinkImage2 button {*/
+/*    font-size:12px;*/
+/*  }*/
+/*  .LinksTab2:first-child, .LinksTab2:nth-child(2), .LinksTab2:nth-child(3), .LinksTab2:nth-child(4) {*/
+/*    margin-bottom: 15px;*/
+/*  }*/
+/*}*/
+/*@media (max-width: 1250px){*/
+/*  .LinksTab2 .LinkImage2 button {*/
+/*    font-size: 10px;*/
+/*  }*/
+/*  .sidebar_container{*/
+/*    height: 72vh;*/
+/*  }*/
+/*  .sidebar_container .sahar__btn {*/
+
+/*    bottom: -1px;*/
+/*  }*/
+/*  #greetingsWP{*/
+/*    height: 69.4vh;*/
+/*  }*/
+/*  #greetingsWP .info {*/
+/*    width: 38%;*/
+/*    font-size: 11px;*/
+/*  }*/
+/*  .LinksWrapper2 {*/
+/*    position: relative;*/
+/*    top: -33px;*/
+/*  }*/
+/*  .LinksTab2:first-child, .LinksTab2:nth-child(2), .LinksTab2:nth-child(3), .LinksTab2:nth-child(4) {*/
+/*    margin-bottom: 16px;*/
+/*  }*/
+/*  h1:before,h1:after{*/
+/*    left: 4% ;*/
+/*    right: 4%;*/
+/*  }*/
 }
-@media (max-width: 1200px){
-  .LinksTab2 .LinkImage2 button {
-    font-size: 10px;
-  }
+@media (min-width: 1920px) {
+  /*.sidebar_container{*/
+  /*  height: 65.6vh;*/
+  /*}*/
 }
 
 

@@ -6,11 +6,13 @@ import {
 import {BaseClientSideWebPart} from '@microsoft/sp-webpart-base';
 import {escape} from '@microsoft/sp-lodash-subset';
 
- import styles from './LumenisAllWebPart.module.scss';
 import * as strings from 'LumenisAllWebPartStrings';
  require('./LumenisAllWebPart.module.scss');
 require('./all_webparts.module.scss');
 require('./style.css');
+
+
+
 import {
   SPHttpClient,
   SPHttpClientResponse
@@ -148,10 +150,10 @@ export default class LumenisAllWebPart extends BaseClientSideWebPart<ILumenisAll
 </a>
 </header>
         <div class="all-webparts__container" style="display: grid;
-        grid-template-columns: 21vw 43vw 21vw;height: auto; grid-gap: 30px;margin: 0 5vw">
+        grid-template-columns: 18vw 43vw 18vw;height: auto; grid-gap: 30px;margin: 0 9vw">
 
         <div class="left__sidebar">
-             <div class="container" id="usefulLinksWP">
+             <div class="sidebar_container" id="usefulLinksWP">
                 <div style="background: #fff;border-radius: 10px;height: 84%"><h3 id="usefulLinksWPTitle">${this.properties.wpTitle_UsefulLinks}</h3>
                  <div class="useful_list"></div></div>
                  <div class="sahar__btn">
@@ -170,7 +172,7 @@ export default class LumenisAllWebPart extends BaseClientSideWebPart<ILumenisAll
     // Quick Links
     if (this.properties.Link1 != '') {
       html += `
-<div class="main" style="height: 100%">
+<div class="main" >
   <div class="LinksWrapper">
                 <h1 class="title">מידע לעובדים</h1>
              </div>
@@ -311,9 +313,9 @@ export default class LumenisAllWebPart extends BaseClientSideWebPart<ILumenisAll
 
                                    <div id="PhotoGalleryTable">
                                    <div id="Title">
-                                   <h2  style="color: #040507";>${this.properties.photoGalleryTitle}</h2>
+                                   <h2  style="color: #040507">${this.properties.photoGalleryTitle}</h2>
                                     </div>
-                                     <div style="width:100%; height: 231px;  background: #fff;  padding: 16px;  margin: 1.2rem auto;">
+                                     <div style="width:100%;height: 227px;;  background: #fff;  padding: 16px;  margin: 1.2rem auto;">
                                      <div id="FileProperties">
                                     </div>
                                     <div id="slidesShow-Container">

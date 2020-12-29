@@ -15,14 +15,14 @@
   "supportedHosts": ["SharePointWebPart"],
 
   "preconfiguredEntries": [{
-    "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
     "group": { "default": "Other" },
     "title": { "default": "lumenis-all" },
     "description": { "default": "lumenis-all description" },
     "officeFabricIconFontName": "Page",
     "properties": {
       "description": "lumenis-all",
-      "mainBannerImg": "https://lumenis.sharepoint.com/sites/Portal/Site%20Assets/Homepage%20design/BigBanner1-.jpg",
+      "mainBannerImg": "https://lumenis.sharepoint.com/sites/Portal/Site%20Assets/Homepage%20design/BigBanner-1_FIXED.png",
       "descriptionUsefulLinks": "LumenisUsefulLinksWp",
       "wpTitle_UsefulLinks": "קישורים שימושיים",
       "listName_UsefulLinks": "LumenisUsefulLinks",

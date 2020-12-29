@@ -21,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1m3jMlyONUN9q4ZRu8GfLIenL3j" />
@@ -72,7 +77,9 @@
       <updated>1608729123241</updated>
       <workItem from="1608729126698" duration="71736000" />
       <workItem from="1609139181002" duration="4121000" />
-      <workItem from="1609144318628" duration="6062000" />
+      <workItem from="1609144318628" duration="12578000" />
+      <workItem from="1609159402270" duration="3124000" />
+      <workItem from="1609163269049" duration="12062000" />
     </task>
     <task id="LOCAL-00001" summary="add project">
       <created>1608739286369</created>
@@ -109,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609073850706</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fixing css-5 28.12.2020">
+      <created>1609150729859</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609150729859</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +135,7 @@
     <MESSAGE value="fixing css-2" />
     <MESSAGE value="fixing css-3" />
     <MESSAGE value="fixing css-4" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing css-4" />
+    <MESSAGE value="fixing css-5 28.12.2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing css-5 28.12.2020" />
   </component>
 </project>
